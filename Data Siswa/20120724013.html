@@ -28,13 +28,18 @@
         }
         .content {
             padding: 20px; /* Padding untuk konten kartu */
-        }
-        .content p {
-            margin: 5px 0; /* Margin untuk paragraf */
+            display: grid; /* Gunakan grid untuk perataan */
+            grid-template-columns: 180px 10px 1fr; /* Kolom label, : , dan nilai */
+            row-gap: 10px; /* Jarak antar baris */
         }
         .content strong {
-            display: inline-block; /* Membuat label tebal menjadi blok */
-            width: 180px; /* Lebar label untuk perataan */
+            text-align: left; /* Ratakan teks label ke kiri */
+        }
+        .content .separator {
+            text-align: center; /* Pusatkan tanda : */
+        }
+        .content span {
+            word-wrap: break-word; /* Bungkus teks panjang */
         }
     </style>
 </head>
@@ -44,17 +49,17 @@
             Data Siswa PSHT
         </div>
         <div class="content">
-            <p><strong>No Induk Siswa</strong>: 20120724013</p>
-            <p><strong>Nama</strong>: Raditya Pratama</p>
-            <p><strong>Cabang</strong>: Ogan Komering Ilir</p>
-            <p><strong>Ranting</strong>: Kayu Agung</p>
-            <p><strong>Rayon</strong>: Tanjung Rancing</p>
-            <p><strong>Jenis Kelamin</strong>: Laki-laki</p>
-            <p><strong>Alamat</strong>: Jua-Jua RT08</p>
-            <p><strong>Tempat Lahir</strong>: Bandar Lampung</p>
-            <p><strong>Tanggal Lahir</strong>: 10/09/2012</p>
-            <p><strong>Pekerjaan</strong>: Sekolah</p>
-            <p><strong>No Handphone</strong>: 0</p>
+            <strong>No Induk Siswa</strong><span class="separator">:</span><span>20120724013</span>
+            <strong>Nama</strong><span class="separator">:</span><span>Raditya Pratama</span>
+            <strong>Cabang</strong><span class="separator">:</span><span>Ogan Komering Ilir</span>
+            <strong>Ranting</strong><span class="separator">:</span><span>Kayu Agung</span>
+            <strong>Rayon</strong><span class="separator">:</span><span>Tanjung Rancing</span>
+            <strong>Jenis Kelamin</strong><span class="separator">:</span><span>Laki-laki</span>
+            <strong>Alamat</strong><span class="separator">:</span><span>Jln. Simpang Bulog LK. VIII RT.08 Kel. Jua-Jua Kec. Kayuagung Kab. Ogan Komering ilir</span>
+            <strong>Tempat Lahir</strong><span class="separator">:</span><span>(Hanya Tampil di kartu)</span>
+            <strong>Tanggal Lahir</strong><span class="separator">:</span><span>(Hanya Tampil di kartu)</span>
+            <strong>Pekerjaan</strong><span class="separator">:</span><span>Sekolah</span>
+            <strong>No Handphone</strong><span class="separator">:</span><span>(Hanya Tampil di kartu)</span>
         </div>
     </div>
 </body>
