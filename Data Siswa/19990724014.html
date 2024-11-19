@@ -28,13 +28,18 @@
         }
         .content {
             padding: 20px; /* Padding untuk konten kartu */
-        }
-        .content p {
-            margin: 5px 0; /* Margin untuk paragraf */
+            display: grid; /* Gunakan grid untuk perataan */
+            grid-template-columns: 180px 10px 1fr; /* Kolom label, : , dan nilai */
+            row-gap: 10px; /* Jarak antar baris */
         }
         .content strong {
-            display: inline-block; /* Membuat label tebal menjadi blok */
-            width: 180px; /* Lebar label untuk perataan */
+            text-align: left; /* Ratakan teks label ke kiri */
+        }
+        .content .separator {
+            text-align: center; /* Pusatkan tanda : */
+        }
+        .content span {
+            word-wrap: break-word; /* Bungkus teks panjang */
         }
     </style>
 </head>
@@ -44,17 +49,17 @@
             Data Siswa PSHT
         </div>
         <div class="content">
-            <p><strong>No Induk Siswa</strong>: 19990724014</p>
-            <p><strong>Nama</strong>: Muhamad Soheh Solaudin W</p>
-            <p><strong>Cabang</strong>: Ogan Komering Ilir</p>
-            <p><strong>Ranting</strong>: Kayu Agung</p>
-            <p><strong>Rayon</strong>: Tanjung Rancing</p>
-            <p><strong>Jenis Kelamin</strong>: Laki-laki</p>
-            <p><strong>Alamat</strong>: Pematang Kasih Kec. Mesuji</p>
-            <p><strong>Tempat Lahir</strong>: Pematang Kasih</p>
-            <p><strong>Tanggal Lahir</strong>: 07/09/1999</p>
-            <p><strong>Pekerjaan</strong>: Polisi</p>
-            <p><strong>No Handphone</strong>: 0</p>
+            <strong>No Induk Siswa</strong><span class="separator">:</span><span>19990724014</span>
+            <strong>Nama</strong><span class="separator">:</span><span>Muhamad Soheh Solaudin W</span>
+            <strong>Cabang</strong><span class="separator">:</span><span>Ogan Komering Ilir</span>
+            <strong>Ranting</strong><span class="separator">:</span><span>Kayu Agung</span>
+            <strong>Rayon</strong><span class="separator">:</span><span>Tanjung Rancing</span>
+            <strong>Jenis Kelamin</strong><span class="separator">:</span><span>Laki-laki</span>
+            <strong>Alamat</strong><span class="separator">:</span><span>Desa Pematang  Kasih Kec. Mesuji Kab. Ogan Komering ilir</span>
+            <strong>Tempat Lahir</strong><span class="separator">:</span><span>(Hanya Tampil di kartu)</span>
+            <strong>Tanggal Lahir</strong><span class="separator">:</span><span>(Hanya Tampil di kartu)</span>
+            <strong>Pekerjaan</strong><span class="separator">:</span><span>Polisi</span>
+            <strong>No Handphone</strong><span class="separator">:</span><span>(Hanya Tampil di kartu)</span>
         </div>
     </div>
 </body>
